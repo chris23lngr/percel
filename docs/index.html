@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percel</title>
+
+    <link rel="stylesheet" href="../style/percel.css">
+
+</head>
+<body>
+
+    <div class="home">
+
+        <h1>Hello, <span class="fc-highlight">my Friend!</span></h1>
+
+        <div class="text-box">
+
+            <h3 class="fw-4"><span class="fw-5 fc-highlight">Percel</span> is an opensource css framework that follows the design guidelines of vercel. Start a new project now or read the documentation!</h3>
+
+        </div>
+
+        <div class="content">
+
+            <div class="card">
+
+                <h2>Documentation</h2>
+
+                <p>Take a look at the documentation to get started</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Examples</h2>
+
+                <p>Look at interesting examples made with percel.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <a href="">See on Github</a>
+
+    </div>
+    
+    <style>
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .home {
+
+
+            height: 90vh;
+
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-direction: column;
+
+        }
+
+        .content {
+            margin-top: 100px;
+            width: 45vw;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .content .card {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #eaeaea;
+
+            transition: border .5s;
+
+        }
+
+        .content .card h2 {
+            margin: 10px 0 0 0;
+            transition: color .5s;
+        }
+
+        .content .card p {
+            transition: color .5s;
+        }
+
+        .content .card:hover {
+
+            border: 1px solid rgb(2, 112, 243);
+            cursor: pointer;
+
+        }
+
+        .content .card:hover h2 {
+
+            color: rgb(2, 112, 243);
+
+        }
+
+        .content .card:hover p {
+
+            color: rgb(2, 112, 243);
+
+        }
+
+        .home h1 {
+            font-size: 70px;
+        }
+
+        .text-box {
+
+            width: 45vw;
+            text-align: center;
+        }
+
+        .footer {
+
+            border-top: 1px solid #eaeaea;
+
+            height: calc(10vh - 2px);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</body>
+</html>

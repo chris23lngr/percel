@@ -1,0 +1,82 @@
+@import '../variables';
+
+h1, h2, h3, h4, h5, h6, p, span, a{
+    
+    font-family: $font-family;
+    //margin: 15px 0 15px 0;
+    color: map-get($map: $font-colors, $key: 'primary');
+    text-decoration: none;
+
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: map-get($map: $font-colors, $key: 'secondary');
+}
+
+a {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: map-get($map: $font-colors, $key: 'secondary');
+
+    &:hover {
+        color: map-get($map: $font-colors, $key: 'highlight');
+    }
+
+}
+
+@each $key, $val in $font-colors {
+
+    .fc-#{$key} {
+        color: $val;
+    }
+
+}
+
+@for $var from 1 to 10 {
+            
+    &.fw-#{$var} {
+        font-weight: $var * 100;
+    }
+
+}
