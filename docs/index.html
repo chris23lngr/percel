@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Percel</title>
+    <link rel="stylesheet" href="./style/main.css">
 
 </head>
 <body>
@@ -21,7 +22,7 @@
 
         <div class="content">
 
-            <div class="card">
+            <div onClick="redirectToDocumenation()" class="card">
 
                 <h2>Documentation</h2>
 
@@ -37,21 +38,44 @@
 
             </div>
 
+
         </div>
+
+        <div class="content no-margin-top">
+
+          <div onClick="redirectComponents()" class="card">
+
+              <h2>Components</h2>
+
+              <p>Here's a list of all the available components included.</p>
+
+          </div>
+
+          <div onClick="redirectRepo()" class="card">
+
+            <h2>Github</h2>
+
+            <p>You can find the source code to this project in our github repo.</p>
+
+        </div>
+
+      </div>
 
     </div>
 
     <div class="footer">
 
-        <a href="">See on Github</a>
+        <a href="https://github.com/chris23lngr/percel">See on Github</a>
 
     </div>
-    
+  
+
     <style>
 
         html, body {
             margin: 0;
             padding: 0;
+            line-break: strict;
         }
 
         .home {
@@ -83,6 +107,7 @@
             border: 1px solid #eaeaea;
 
             transition: border .5s;
+            width: calc(45vw - 20px);
 
         }
 
@@ -135,212 +160,14 @@
             align-items: center;
         }
 
+        .no-margin-top {
+          margin-top: 0;
+        }
+
     </style>
 
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-h1, h2, h3, h4, h5, h6, p, span, a {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  color: black;
-  text-decoration: none;
-}
 
-h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-}
-
-h2 {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 40px;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 32px;
-}
-
-h4 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-}
-
-h5 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-h6 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-}
-
-p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #666666;
-}
-
-a {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #666666;
-}
-
-a:hover {
-  color: #0270f3;
-}
-
-.fc-primary {
-  color: black;
-}
-
-.fc-secondary {
-  color: #666666;
-}
-
-.fc-highlight {
-  color: #0270f3;
-}
-
-.fw-1 {
-  font-weight: 100;
-}
-
-.fw-2 {
-  font-weight: 200;
-}
-
-.fw-3 {
-  font-weight: 300;
-}
-
-.fw-4 {
-  font-weight: 400;
-}
-
-.fw-5 {
-  font-weight: 500;
-}
-
-.fw-6 {
-  font-weight: 600;
-}
-
-.fw-7 {
-  font-weight: 700;
-}
-
-.fw-8 {
-  font-weight: 800;
-}
-
-.fw-9 {
-  font-weight: 900;
-}
-
-img.avatar-small {
-  width: 30px;
-  height: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 100%;
-}
-
-img.avatar {
-  width: 55px;
-  height: 55px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 100%;
-}
-
-img.avatar-great {
-  width: 80px;
-  height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 100%;
-}
-
-div.avatar-box {
-  height: 55px;
-  width: 55px;
-  position: relative;
-}
-
-div.avatar-box .av-icon {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 100%;
-  z-index: 99;
-  border: 3px solid white;
-}
-
-div.avatar-box .av-content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 100%;
-}
-
-div.avatar-box-great {
-  height: 80px;
-  width: 80px;
-  position: relative;
-}
-
-div.avatar-box-great .av-icon {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 100%;
-  z-index: 99;
-  border: 3px solid white;
-}
-
-div.avatar-box-great .av-content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 75px;
-  height: 75px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 100%;
-}
-
-div.avatar-list img {
-  margin-left: -15px;
-  border: 3px solid white;
-}
-
-div.avatar-list > *:first-child {
-  margin-left: 0;
-}
-/*# sourceMappingURL=percel.css.map */
-    </style>
+    <script src="./script/main.js"></script>
 
 </body>
 </html>

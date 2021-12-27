@@ -1,0 +1,26 @@
+@import '../variables';
+
+div {
+
+    &.tag {
+
+      border: 1px solid #eaeaea;  
+      padding: 0 6px;
+
+      background-color: #fafafa;
+      border-radius: $--border-radius-normal;
+      font-size: $--font-size-small;
+
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      
+      p, .tag-content {
+        font-size: $--font-size-small;
+        line-height: 0;
+        
+      }
+
+    }
+
+}

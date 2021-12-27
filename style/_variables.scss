@@ -3,3 +3,24 @@
 @import './colors';
 
 $font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+
+$--height-small: 35px;
+$--height-normal: 40px;
+$--height-big: 45px;
+
+$--padding-small: 12px;
+$--padding-normal: 18px;
+$--padding-big: 24px;
+
+$--font-size-small: 14px;
+$--font-size-normal: 14px;
+$--font-size-big: 16px;
+
+$--border-radius-small: 5px;
+$--border-radius-normal: $--border-radius-small;
+$--border-radius-big: $--border-radius-small;
+
+$--line-height-small: 20px;
+$--line-height-normal: 20px;
+$--line-height-big: 24px;

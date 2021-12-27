@@ -1,0 +1,47 @@
+@import '../variables';
+
+$color: #fff;
+$background: #000;
+
+button {
+
+    // Non Chaning attributes
+    border-radius: $--border-radius-normal;
+    font-weight: 500;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $background;
+    border: 1px solid $background;
+    color: $color;
+
+    // Chaning attributes
+    font-size: $--font-size-normal;
+    height: $--height-normal;
+    padding: 0 $--padding-normal;
+    line-height: $--line-height-normal;
+
+    &.btn-big {
+        font-size: $--font-size-big;
+        height: $--height-big;
+        padding: 0 $--padding-big;
+        line-height: $--line-height-big;
+    }
+
+    &.btn-small {
+        font-size: $--font-size-small;
+        height: $--height-small;
+        padding: 0 $--padding-small;
+        line-height: $--line-height-small;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $background;
+        cursor: pointer;
+    }
+
+}

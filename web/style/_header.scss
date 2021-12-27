@@ -1,0 +1,63 @@
+@import './variables';
+
+div {
+
+    
+
+    &.header {
+
+        padding: 25px $--container-padding-width;
+        border-bottom: 1px solid #eaeaea;
+
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+
+            &:hover {
+                p {
+                    color: $--color-accent;
+                }
+            }
+        }
+
+        .logo-box {
+        
+            flex-grow: 4;
+
+            img.logo {
+
+                width: $--logo-width;
+
+            }
+
+        }
+
+        .nav-box {
+
+            flex-grow: 0.5;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .github-box {
+
+            flex-grow: 0.5;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            img.logo {
+                width: 40px;
+            }
+
+        }
+
+    }
+
+} 
