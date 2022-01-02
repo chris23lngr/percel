@@ -40,7 +40,7 @@ $(document).ready(function() {
   });
   
   function setContent(content__tag) {
-    $("#content-box").load("./contents/" + content__tag + ".html");
+    $("#content-box").load("/contents/" + content__tag + ".html");
   }
   
   function changeActiveStatus(element) {
