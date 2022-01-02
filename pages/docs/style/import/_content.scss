@@ -1,0 +1,12 @@
+.content {
+    
+    flex-grow: 1;
+    height: 100vh;
+    overflow-y: scroll;
+
+    .content-wrapper {
+
+        padding: $--padding-top $--padding-width;
+
+    }
+}

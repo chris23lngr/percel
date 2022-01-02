@@ -1,0 +1,22 @@
+@import '../variables';
+
+.badge {
+
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+
+    border-radius: 15px;
+    
+    font-size: calc(100% - 4px);
+
+    @each $key, $val in $colors {
+
+        &.#{$key} {
+            background-color: $val;
+            color: getForegroundColor($val);
+        }
+    
+    }
+
+}

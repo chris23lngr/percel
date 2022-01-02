@@ -1,0 +1,16 @@
+@import '../variables';
+
+* {
+
+    font-family: 'Inter';
+    color: $--color-primary-accents-6;
+
+}
+
+p, a {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+}

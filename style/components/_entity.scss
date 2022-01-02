@@ -1,0 +1,96 @@
+@import '../variables';
+@import '../colors';
+
+// TEST
+
+/*
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+
+    .wrapper {
+        width: 50vw;
+    }
+
+
+
+}
+*/
+
+div {
+
+    &.entity {
+
+        border-radius: $--border-radius;
+        border: 1px solid $--color-primary-accents-2;
+
+        padding: $--padding-normal $--padding-small;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+        .entity-field {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            padding: 0 15px;
+
+            * {
+                font-size: $--font-size-small;
+                line-height: 20px;
+            }
+
+            &.grow {
+                flex-grow: 1;
+            }
+
+            &.right {
+                justify-content: flex-end;
+                align-items: flex-end;
+                text-align: end;
+            }
+
+            p {
+                width: 100%;
+            }
+
+            .field-title {
+
+                font-weight: 600;
+                color: $--color-primary-foreground;
+
+            }
+
+            &.inactive {
+
+                * {
+
+                    color: $--color-primary-accents-5;
+
+                }
+
+            }
+
+            @for $var from 1 to 100 {
+            
+                &.w-#{$var} {
+                    width: $var * 1%;
+                }
+            
+            }
+
+        }
+
+    }
+
+}

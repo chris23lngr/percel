@@ -8,7 +8,7 @@ div {
       padding: 0 6px;
 
       background-color: #fafafa;
-      border-radius: $--border-radius-normal;
+      border-radius: $--border-radius;
       font-size: $--font-size-small;
 
       display: inline-flex;
@@ -16,6 +16,7 @@ div {
       align-items: center;
       
       p, .tag-content {
+        
         font-size: $--font-size-small;
         line-height: 0;
         

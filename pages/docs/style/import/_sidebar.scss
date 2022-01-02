@@ -1,0 +1,181 @@
+/*
+
+.side-bar {
+
+    height: 100vh;
+
+    width: 15%;
+
+    .side-bar-wrapper {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: column;
+
+        padding: $--padding-top 0 0 $--padding-width;
+
+        min-width: 90%;
+
+        img.logo {
+
+            flex: 0 1 auto;
+            height: 100%;
+
+            width: 50px;
+            height: 50px;
+
+            margin-bottom: 50px;
+
+        }
+
+        .menu-wrapper {
+            
+            flex: 1 1 auto;
+
+            overflow-y: scroll;
+            width: 100%;
+
+            .menu-section {
+
+                margin-bottom: 50px;
+
+
+                .section-title {
+
+                    &.selected {
+                    
+                        font-weight: 700;
+
+                    }
+
+
+                    &::before {
+                        content: url('../assets/chevron-down.svg');
+                        padding-right: 5px;
+                    }
+
+                }
+
+                .item-list {
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    flex-direction: column;
+
+                    margin-left: 6px;
+
+                    border-left: 1px solid #eaeaea;
+
+                    a {
+
+                        margin: 10px 0 10px 25px;
+                        text-decoration: none;
+                        line-height: 21px;
+
+                        &.selected {
+                            color: $--color-success-default;
+                            font-weight: 600;
+                        }
+
+                    }
+
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+}
+*/
+
+.side-bar {
+
+    height: 100vh;
+    width: 200px;
+
+    .side-bar-wrapper {
+
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+
+        .logo-box {
+
+            padding-top: 3.25rem;
+
+            flex: 0 1 auto;
+
+            width: 50px;
+            height: 50px;
+
+            img {
+
+                height: 50px;
+                width: 50px;
+
+            }
+        }
+
+        .menu-box {
+
+            flex: 1 1 auto;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            overflow-y: scroll;
+
+            .item-list {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+        }
+
+    }
+
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .row {
+  border: 1px dotted grey;
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+.box .row.footer {
+  flex: 0 1 40px;
+}

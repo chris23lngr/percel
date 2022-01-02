@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@300;400&display=swap');
+
+/*
+@import './import/text';
+@import './import/sidebar';
+@import './import/content';
+*/
+
+$--container-padding-top: 3.25rem;
+$--container-width: 1250px;
+
+$--row-padding-width: 50px;
+
+html, body {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+
+
+.wrapper {
+
+    ::-webkit-scrollbar {
+        width: 0;  
+        background: transparent;  
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    min-height: 100vh;
+
+    .container {
+
+        padding-top: $--container-padding-top;
+
+        width: $--container-width;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: row;
+
+        .row {
+            padding: 0 $--row-padding-width;
+        }
+
+        .sidebar {
+
+            * {
+                font-family: 'Inter';
+                font-weight: 400;
+            }
+        
+            p, a {
+                margin: 0;
+                color: #444444;
+                text-decoration: none;
+                margin: 10px 0;
+                font-size: 16px;
+            }
+
+            flex: 0 1 auto;
+
+            height: calc(100vh - 3.25rem);
+            overflow-y: scroll;
+
+            .sidebar-wrapper {
+            
+
+                .menu-box {
+
+                    margin-bottom: 50px;
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    .menu-title {
+                        color: #888888;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                    }
+
+                    .active {
+                        color: #0070F3;
+                        font-weight: 600;
+                    }
+
+                    .selector-item {
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #868686;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .content {
+
+            flex: 1 1 auto;
+
+            height: calc(100vh - 3.25rem);
+            overflow-y: scroll;
+
+            max-width: 840px;
+
+            .spacer {
+                width: 100%;
+                height: 5rem;
+            }
+
+            .content-title {
+                margin-bottom: 0.67em;
+                line-height: 72px;
+            }
+
+            .content-subtitle {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #666666;
+            }
+
+            .example-box {
+
+                margin: 25px 0;
+
+                border-radius: 5px;
+
+                border: 1px solid #eaeaea;
+
+                .example-content {
+
+                    padding: 20px;
+
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-start;
+
+                    &.vertical {
+
+                        flex-direction: column;
+
+                    }
+
+                }
+
+                .example-toolbar {
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    padding: 20px;
+                    background-color: #fafafa;
+                    border-radius: 0 0 5px 5px;
+                    border-top: 1px solid #eaeaea;
+
+                    cursor: pointer;
+
+                    p.toolbar-title {
+                        &::before {
+                            content: url('../assets/chevron-right.svg');
+                            padding-right: 5px;
+                        }
+                    }
+
+                    svg {
+                        opacity: 0;
+                    }
+
+                    &.expanded {
+                    
+                        p.toolbar-title {
+                            &::before {
+                                content: url('../assets/chevron-down.svg');
+                                padding-right: 5px;
+                            }
+                        }
+
+                        svg {
+                            opacity: 1;
+                        }
+
+                    }
+
+                }
+
+                .example-expandation {
+
+                    display: none;
+
+                    padding: 20px;
+
+                    border-top: 1px solid #eaeaea;
+
+                    * {
+                        font-family: 'Roboto Mono';
+                        
+                    }
+
+                    &.expanded {
+                        display: inherit;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
