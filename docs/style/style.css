@@ -121,6 +121,10 @@ html, body {
   max-width: 840px;
 }
 
+.wrapper .container .content .desc {
+  margin: 20px 0;
+}
+
 .wrapper .container .content .spacer {
   width: 100%;
   height: 5rem;
