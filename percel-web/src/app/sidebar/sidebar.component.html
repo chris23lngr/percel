@@ -4,14 +4,22 @@
 
         <div class="menu-box">
            <p class="menu-title">getting started</p>
-           <a class="active"href="/introduction">Introduction</a>
+           <a id="introduction" (click)="onClick($event)" href="/introduction">Introduction</a>
         </div>
 
         <div class="menu-box">
             <p class="menu-title">Components</p>
-            <a href="/avatar">Avatar</a>
-            <a href="/button">Button</a>
-            <a href="/entity">Entity</a>
+
+            <a id="avatar" (click)="onClick($event)" href="/avatar">Avatar</a>
+            <a id="button" (click)="onClick($event)" href="/button">Button</a>
+            <a id="entity" (click)="onClick($event)" href="/entity">Entity</a>
+
+            <!---
+            <a id="avatar" (click)="onClick($event)" >Avatar</a>
+            <a id="button" (click)="onClick($event)" >Button</a>
+            <a id="entity" (click)="onClick($event)" >Entity</a>
+            -->
+            
         </div>
 
     </div>

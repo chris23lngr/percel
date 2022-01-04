@@ -6,6 +6,10 @@
 
       <div class="row content">
         
+        <div *ngIf="_router.url == '/'">
+          <app-content-introduction></app-content-introduction>
+        </div>
+
         <router-outlet></router-outlet>
       
       </div>

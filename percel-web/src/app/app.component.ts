@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Percel';
+
+  constructor(public _router: Router) {}
+
+  ngOnInit(): void {
+
+    if(this._router.url == "") {
+      localStorage.setItem('target', 'introduction');
+    }
+
+  }
+
 }
